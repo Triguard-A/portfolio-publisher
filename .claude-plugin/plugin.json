@@ -1,0 +1,13 @@
+{
+  "name": "portfolio-publisher",
+  "description": "Turn designs you make with Claude (Claude Code projects, Claude artifacts, Claude Design) or Figma into polished case studies on your existing portfolio site. Connect your portfolio once with its URL or Vercel link, then publish with one command.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Triguard-A",
+    "url": "https://github.com/Triguard-A"
+  },
+  "repository": "https://github.com/Triguard-A/portfolio-publisher",
+  "license": "MIT",
+  "keywords": ["portfolio", "case-study", "design", "figma", "vercel", "publishing"],
+  "skills": "./skills/"
+}

@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "owner": {
+    "name": "Your Name",
+    "role": "Product Designer"
+  },
+  "portfolio": {
+    "mode": "code",
+    "liveUrl": "https://your-site.com",
+    "repo": "https://github.com/you/portfolio",
+    "localPath": "/Users/you/Documents/portfolio",
+    "productionBranch": "main",
+    "host": "vercel",
+    "framework": "next-app-router",
+    "language": "typescript",
+    "styling": "tailwind",
+    "packageManager": "npm",
+    "dataModel": {
+      "kind": "ts-array | json | markdown | mdx | content-collection | cms | hardcoded",
+      "path": "src/data/projects.ts",
+      "exampleSlug": "existing-project",
+      "fields": ["slug", "title", "summary", "year", "cover", "images", "tags"]
+    },
+    "route": "/work/[slug]",
+    "pageMode": "dynamic",
+    "images": {
+      "dir": "public/work/{slug}",
+      "naming": "{name}-{width}.webp",
+      "format": "webp",
+      "widths": [800, 1600],
+      "component": "next/image"
+    },
+    "listing": ["app/page.tsx", "app/work/page.tsx"],
+    "featured": "boolean field `featured`; first one gets the large card",
+    "categories": ["Product Design", "Branding"],
+    "seo": "generateMetadata in app/work/[slug]/page.tsx reads seo fields",
+    "sitemap": "app/sitemap.ts (generated) | public/sitemap.xml (manual) | null",
+    "checks": ["npm run lint", "npm run build"],
+    "dev": { "command": "npm run dev", "port": 3000 },
+    "baseline": "build passed on setup (2026-01-01)",
+    "notes": "Anything unusual, e.g. 'case studies use MDX components from components/mdx'."
+  },
+  "exportDir": "/Users/you/Documents/portfolio-exports"
+}

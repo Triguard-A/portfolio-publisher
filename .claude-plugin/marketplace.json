@@ -1,0 +1,19 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "portfolio-publisher",
+  "metadata": {
+    "description": "Publish designs made with Claude or Figma to your own portfolio site as case studies."
+  },
+  "owner": {
+    "name": "Triguard-A"
+  },
+  "plugins": [
+    {
+      "name": "portfolio-publisher",
+      "description": "Turn designs you make with Claude or Figma into case studies on your existing portfolio. Connect your portfolio once with its URL or Vercel link, then publish with one command.",
+      "version": "1.0.0",
+      "source": "./",
+      "category": "design"
+    }
+  ]
+}
